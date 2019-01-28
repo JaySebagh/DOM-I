@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM \n Is \n Awesome",
+    "h1": "DOM Is Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -52,7 +52,7 @@ navItems[4].textContent = siteContent.nav["nav-item-6"];
 document.getElementById("cta-img").src = siteContent.cta["img-src"];
 document.getElementById("middle-img").src = siteContent["main-content"]["middle-img-src"];
 
-document.querySelector("h1").textContent = siteContent.cta.h1;
+document.querySelector("h1").innerHTML = "Dom<br>Is<br>Awesome";
 document.querySelector("button").textContent = siteContent.cta.button;
 
 let multipleh4 = document.querySelectorAll('h4');
@@ -69,7 +69,7 @@ multipleP[1].textContent = siteContent["main-content"]["about-content"];
 multipleP[2].textContent = siteContent["main-content"]["services-content"];
 multipleP[3].textContent = siteContent["main-content"]["product-content"];
 multipleP[4].textContent = siteContent["main-content"]["vision-content"];
-multipleP[5].textContent = siteContent.contact.address
+multipleP[5].innerHTML = "123 Way 456 Street<br>Somewhere, USA"
 multipleP[6].textContent = siteContent.contact.phone
 multipleP[7].textContent = siteContent.contact.email
 multipleP[8].textContent = siteContent.footer.copyright
